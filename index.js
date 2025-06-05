@@ -25,6 +25,8 @@ app.use("/api", Routes);
 app.get('/', (req, res) => {
     res.send("Home");
 })
+
+//mongodb connection
 app.listen(PORT, () => {
     console.log("App Started");
     mongoose.connect(uri);
