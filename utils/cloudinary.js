@@ -6,7 +6,7 @@ dotenv.config();
 import multer from 'multer';
 import { resolve } from 'path';
 // const upload = multer({ storage });
-
+//cloudinary data
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
     api_key: process.env.CLOUD_API_KEY,
