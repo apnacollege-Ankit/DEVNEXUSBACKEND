@@ -21,6 +21,9 @@ app.use('/uploads', express.static('uploads'));
 
 app.use("/api", Routes);
 
+app.get('/', (req,res)=>{
+    res.send("Home")
+})
 app.listen(PORT, () => {
     console.log("App Started");
     mongoose.connect(uri);
