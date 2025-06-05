@@ -21,6 +21,7 @@ app.use('/uploads', express.static('uploads'));
 
 app.use("/api", Routes);
 
+// for testing
 app.get('/', (req, res) => {
     res.send("Home");
 })
