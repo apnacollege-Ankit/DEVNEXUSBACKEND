@@ -1,12 +1,12 @@
 import express from 'express';
 import {createPortfolioToCloudinary} from '../controllers/projectControllers.js';
 import { upload,  svgUpload} from '../middleware/multer.js';
-import { addBrand, addIndustry, addPort, addService } from '../controllers/landingPageControllers.js';
+import { textSliderImage, addIndustry, addPort, addService } from '../controllers/landingPageControllers.js';
 import { addTeamMember } from '../controllers/ourTeamControllers.js';
 import { BlogImageController, BlogController, AllBlogController, EditBlogController } from '../controllers/blogControllers.js';
 import { subscribeToNewsletter } from '../controllers/newsletterControllers.js';
 import { addTestimonials } from '../controllers/testimonialsControllers.js';
-import { textSliderImage } from '../controllers/textSliderControllers.js';
+import { addBrand } from '../controllers/brandControllers.js';
 import { chatBot, getAllChatBotMessages } from '../controllers/chatBotControllers.js';
 import { contactus } from '../controllers/ContactusControllers.js';
 const router = express.Router();
